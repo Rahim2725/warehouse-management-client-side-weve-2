@@ -23,7 +23,7 @@ const Banner = () => {
             <h2 className="text-center"> Lazy Load</h2>
             <Slider {...settings}>
 
-                <div className="bg-red-500 flex">
+                <div>
                     <img className="mx-auto" src='https://i.ibb.co/0tDvx7Y/bigstock-Commercial-cleaning-crew-ladie-224186584.jpg' alt="" />
                     hjhjgghhhghhj
                 </div>

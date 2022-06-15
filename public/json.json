@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "627d52e784471230f188522f",
+        "name": "Vivo y33s 8gb/128gb",
+        "price": "11000",
+        "img": "https://i.ibb.co/zFMcmtM/vivo-y33s-8gb-128gb-mirror-black-6-1.jpg",
+        "description": "Vivo Y30 comes with 6.47 inches HD+ IPS LCD screen. It has a Full-View punch-hole design. The back camera is of quad 13+8+2+2 MP with PDAF, ultrawide, depth sensor, dedicated macro camera, LED flash etc.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885230",
+        "name": "Realme-c31",
+        "price": "17000",
+        "img": "https://i.ibb.co/QF2Q0mb/relame-c31-dark-black.jpg",
+        "description": "Realme C31 comes with 6.5 inches HD+ IPS LCD screen. It has a full-view waterdrop notch design. The back camera is of triple 13+2+0.3 MP with PDAF, LED flash, depth sensor, dedicated macro camera etc.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885232",
+        "name": "Vivo 15s 3gb/32gb",
+        "price": "15000",
+        "img": "https://i.ibb.co/NSKQ1Sd/vivo-y15s-3gb32gb-blue.jpg",
+        "description": "Vivo Y15s comes with 6.51 inches HD+ IPS LCD screen. It has a Full-View waterdrop notch design. The back camera is of dual 13+2 MP with Autofocus, depth sensor, LED flash etc. ",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885233",
+        "name": "Tecno-spark-7",
+        "price": "10000",
+        "img": "https://i.ibb.co/02VwrsV/tecno-spark-7-spruce-green-4.jpg",
+        "description": "Tecno Spark 7 Pro comes with 6.6 inches HD+ IPS LCD screen. It has a punch-hole design with colorful gradient back. The back camera is of triple 48 MP main. It has PDAF, quad-LED flash, HDR etc. features.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885234",
+        "name": "Tecno-spark 8pro",
+        "price": "13000",
+        "img": "https://i.ibb.co/HKRRrnJ/tecno-spark-8-pro-komodo-island-3.jpg",
+        "description": "Tecno Spark 8 Pro comes with 6.8 inches Full HD+ IPS LCD screen. It has a punch-hole design with stylish back. The back camera is of triple 48 MP main camera. It has PDAF, quad-LED flash, HDR etc. features.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885235",
+        "name": "vivo-y1s",
+        "price": "1500",
+        "img": "https://i.ibb.co/vXD0ZG2/vivo-y1s-olive-black-jpg-1.jpg",
+        "description": "Vivo Y1s comes with 6.22 inches HD+ IPS LCD screen. It has a Full-View waterdrop notch design. The back camera is of single 13 MP with PDAF, f/2.2 aperture, LED flash etc. ",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885236",
+        "name": "Redmi-9a 5g",
+        "price": "14000",
+        "img": "https://i.ibb.co/QC0px8t/redmi-9a-5.jpg",
+        "description": "Xiaomi Redmi 9A comes with 6.53 inches HD+ screen. It has a Full-View waterdrop notch design. The back camera is of 13 MP with PDAF, LED flash, HDR etc. features and Full HD video recording option. ",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885237",
+        "name": "Samsung-galaxy-s21 5g",
+        "price": "25000",
+        "img": "https://i.ibb.co/3CdNYvS/samsung-galaxy-s21-fe-5g-8gb-olive-jpg-4.jpg",
+        "description": "Samsung Galaxy s22 comes with 6.7 inches Full HD+ Super AMOLED Plus screen. It has a center punch-hole front camera design. The back camera is of Quad 108+12+5+5 with PDAF, OIS, ultrawide, depth sensor, dedicated macro camera etc.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885238",
+        "name": "/Realme-8 8gb-128gb",
+        "price": "19000",
+        "img": "https://i.ibb.co/LSX05WZ/realme-8-8gb-128gb-cyber-silver-2.jpg",
+        "description": "Realme 8 comes with 6.4 inches Full HD+ Super AMOLED screen. It has a Full-View left punch-hole design. The back camera is of quad 64+8+2+2 MP with PDAF, dedicated macro camera, depth sensor, ultrawide lens etc. ",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    },
+    {
+        "_id": "627d52e784471230f1885239",
+        "name": "Oppo f21-pro",
+        "price": "25000",
+        "img": "https://i.ibb.co/L5GnGMd/oppo-f21-pro-dream.jpg",
+        "description": "Oppo F21 Pro comes with 6.43 inches Full HD+ AMOLED screen. It has a left punch-hole front camera design. The back camera is of triple 64+2+2 MP with PDAF, LED flash, f/1.7 aperture, microscope, depth sensor, etc.",
+        "supplier_name": "Abdur Rahim",
+        "quantity": "1"
+    }
+]
