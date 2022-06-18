@@ -14,7 +14,7 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a class="btn btn-ghost normal-case text-xl">Mobile Stroll</a>
             </div>
 
             <div class="navbar-end hidden lg:flex">
