@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 
 
 const Login = () => {
+    const { register, formState: { errors }, handleSubmit } = useForm();
 
     let errorMessage;
 
@@ -18,21 +19,12 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
     errorMessage = <p className='text-red-500'>{error?.message}</p>
 
-    console.log(user);
 
-    // use normal login from 
-    // const handleLogin = event => {
-    //     event.preventDefault();
-    //     console.log('btn click')
-    //     const email = event.target.email.value;
-    //     const password = event.target.password.value;
-    //     signInWithEmailAndPassword(email, password);
+   
 
-    // }
-    
-    const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data)
+        const { email, password } = data;
+        signInWithEmailAndPassword(email, password);
     };
 
     if (loading) {
@@ -51,8 +43,16 @@ const Login = () => {
                             <label class="label">
                                 <span class="label-text">Email</span>
                             </label>
-                            <input {...register("firstName", { required: true })} />
-                            {errors.firstName?.type === 'required' && "First name is required"}
+                            <input type="email" placeholder="email" class="input input-bordered" {...register("email", {
+                                required: {
+                                    value: true,
+                                    message: 'Email is Required'
+                                }
+                            })} />
+                            <label>
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+
+                            </label>
                         </div>
 
                         <div class="form-control">
@@ -60,8 +60,15 @@ const Login = () => {
                                 <span class="label-text">Password</span>
                             </label>
 
-                            <input {...register("lastName", { required: true })} />
-                            {errors.lastName && "Last name is required"}
+                            <input type="password" placeholder="Password" class="input input-bordered" {...register("password", {
+                                required: {
+                                    value: true,
+                                    message: 'Password is Required'
+                                }
+                            })} />
+                            <label>
+                                {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                            </label>
 
                             <label class="label">
                                 <Link to="/forgotPassword" class="label-text-alt link link-hover">Forgot password?</Link>
