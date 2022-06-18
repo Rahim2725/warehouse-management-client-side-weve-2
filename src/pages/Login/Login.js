@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from "react-router-dom"
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Loading from '../../components/Loading';
 
 
 const Login = () => {
-    
+    let errorMessage;
 
     const [
         signInWithEmailAndPassword,
@@ -13,19 +14,21 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    errorMessage= <p className='text-red-500'>{error?.message}</p>
 
-    
+    console.log(user);
+
     const handleLogin = event => {
         event.preventDefault();
         console.log('btn click')
-        const email = event.target.email.value ;
-        const password = event.target.password.value ;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
         signInWithEmailAndPassword(email, password);
 
     }
 
-    if(loading){
-        
+    if (loading) {
+        <Loading></Loading>
     }
 
 
@@ -51,6 +54,7 @@ const Login = () => {
                             </label>
                         </div>
 
+                        {errorMessage}
                         <input className='btn btn-primary w-full mt-3' type="submit" value="Login" />
                     </form>
 
