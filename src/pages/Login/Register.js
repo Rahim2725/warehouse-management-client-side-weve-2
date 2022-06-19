@@ -42,7 +42,7 @@ const Register = () => {
                             <label class="label">
                                 <span class="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="name" class="input input-bordered" {...register("name", {
+                            <input type="text" placeholder="Name" class="input input-bordered" {...register("name", {
                                 required: {
                                     value: true,
                                     message: 'name is Required'
@@ -57,7 +57,7 @@ const Register = () => {
                             <label class="label">
                                 <span class="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="email" class="input input-bordered" {...register("email", {
+                            <input type="email" placeholder="Email" class="input input-bordered" {...register("email", {
                                 required: {
                                     value: true,
                                     message: 'Email is Required'
