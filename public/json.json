@@ -1,6 +1,5 @@
 [
     {
-        "_id": "627d52e784471230f188522f",
         "name": "Vivo y33s 8gb/128gb",
         "price": "11000",
         "img": "https://i.ibb.co/zFMcmtM/vivo-y33s-8gb-128gb-mirror-black-6-1.jpg",
@@ -9,7 +8,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885230",
         "name": "Realme-c31",
         "price": "17000",
         "img": "https://i.ibb.co/QF2Q0mb/relame-c31-dark-black.jpg",
@@ -18,7 +16,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885232",
         "name": "Vivo 15s 3gb/32gb",
         "price": "15000",
         "img": "https://i.ibb.co/NSKQ1Sd/vivo-y15s-3gb32gb-blue.jpg",
@@ -27,7 +24,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885233",
         "name": "Tecno-spark-7",
         "price": "10000",
         "img": "https://i.ibb.co/02VwrsV/tecno-spark-7-spruce-green-4.jpg",
@@ -36,7 +32,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885234",
         "name": "Tecno-spark 8pro",
         "price": "13000",
         "img": "https://i.ibb.co/HKRRrnJ/tecno-spark-8-pro-komodo-island-3.jpg",
@@ -45,7 +40,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885235",
         "name": "vivo-y1s",
         "price": "1500",
         "img": "https://i.ibb.co/vXD0ZG2/vivo-y1s-olive-black-jpg-1.jpg",
@@ -54,7 +48,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885236",
         "name": "Redmi-9a 5g",
         "price": "14000",
         "img": "https://i.ibb.co/QC0px8t/redmi-9a-5.jpg",
@@ -63,7 +56,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885237",
         "name": "Samsung-galaxy-s21 5g",
         "price": "25000",
         "img": "https://i.ibb.co/3CdNYvS/samsung-galaxy-s21-fe-5g-8gb-olive-jpg-4.jpg",
@@ -72,7 +64,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885238",
         "name": "/Realme-8 8gb-128gb",
         "price": "19000",
         "img": "https://i.ibb.co/LSX05WZ/realme-8-8gb-128gb-cyber-silver-2.jpg",
@@ -81,7 +72,6 @@
         "quantity": "1"
     },
     {
-        "_id": "627d52e784471230f1885239",
         "name": "Oppo f21-pro",
         "price": "25000",
         "img": "https://i.ibb.co/L5GnGMd/oppo-f21-pro-dream.jpg",
