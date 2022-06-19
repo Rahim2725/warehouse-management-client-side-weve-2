@@ -1,5 +1,5 @@
-import Blogs from "../pages/Blogs"
 import Contact from "../pages/Contact"
+import Blogs from "../pages/Home/Blogs"
 import Home from "../pages/Home/Home"
 import ForgotPassword from "../pages/Login/ForgotPassword"
 import Login from "../pages/Login/Login"

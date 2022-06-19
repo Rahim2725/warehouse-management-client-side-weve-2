@@ -1,8 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom'
 
-const Service = ({phone}) => {
-    const {name, img, description, price, supplier_name, quantity} = phone ;
+
+const Service = ({ phone }) => {
+    const navigate = useNavigate() ;
+    const { name, img, description, price, supplier_name, quantity, _id } = phone;
 
     const [seeMore, setSeeMore] = useState(false);
 
@@ -10,6 +12,10 @@ const Service = ({phone}) => {
         setSeeMore(more => !more);
     }
 
+    const updateData = id => {
+        console.log('update btn is click',id);
+        navigate(`/service/${id}`)
+    }
 
 
     return (
@@ -19,12 +25,12 @@ const Service = ({phone}) => {
                 <h2 class="card-title">{name}</h2>
                 <p>Price: ৳{price}</p>
 
-                <p> {seeMore ?  description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer btn btn-xs btn-outline text-red-500'>{seeMore ? 'See Less' : 'See More'}</span></p>
+                <p> {seeMore ? description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer btn btn-xs btn-outline text-red-500'>{seeMore ? 'See Less' : 'See More'}</span></p>
 
                 <p>Quantity: {quantity}</p>
                 <p>Supplier Name : {supplier_name}</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Update</button>
+                    <button onClick={() => updateData(_id)} class="btn btn-primary">Update</button>
                 </div>
             </div>
         </div>
