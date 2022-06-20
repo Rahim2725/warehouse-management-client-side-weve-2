@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ phone }) => {
+    
     const navigate = useNavigate() ;
     const { name, img, description, price, supplier_name, quantity, _id } = phone;
 
@@ -19,18 +20,18 @@ const Service = ({ phone }) => {
 
 
     return (
-        <div class="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src={img} alt="Shoes" /></figure>
+        <div class="card card-compact  bg-base-100 shadow-xl rounded-none border">
+            <figure><img width="200px" src={img} alt="Shoes" /></figure>
             <div class="card-body">
                 <h2 class="card-title">{name}</h2>
                 <p>Price: ৳{price}</p>
 
-                <p> {seeMore ? description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer btn btn-xs btn-outline text-red-500'>{seeMore ? 'See Less' : 'See More'}</span></p>
+                <p> {seeMore ? description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer text-blue-900 font-bold underline ml-2'>{seeMore ? 'See Less' : 'See More...'}</span></p>
 
                 <p>Quantity: {quantity}</p>
                 <p>Supplier Name : {supplier_name}</p>
                 <div class="card-actions justify-end">
-                    <button onClick={() => updateData(_id)} class="btn btn-primary">Update</button>
+                    <button onClick={() => updateData(_id)} class="btn  rounded-none px-8 py-2" >Update</button>
                 </div>
             </div>
         </div>
