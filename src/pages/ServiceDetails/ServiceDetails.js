@@ -2,13 +2,16 @@ import React from 'react';
 import { useQuery } from 'react-query';
 const ServiceDetails = () => {
 
-    const { data: phones, isLoading } = useQuery('service', () =>
+    const { data: phones, isLoading, refetch } = useQuery('service', () =>
         fetch('http://localhost:5000/service')
             .then(res => res.json())
     );
 
     if (isLoading) {
         return <p>Loading......</p>
+    }
+    const deletePhone = id => {
+       console.log(id);
     }
 
     return (
@@ -35,7 +38,7 @@ const ServiceDetails = () => {
                                     <td> <img className='w-20 h-20' src={phone.img} alt="" /></td>
                                     <td>৳{phone.price}</td>
                                     <td>{phone.supplier_name}</td>
-                                    <td>X</td>
+                                    <td className='cursor-pointer' onClick={() => deletePhone(phone._id)}>X</td>
                                 </tr>)
                         }
                     </tbody>

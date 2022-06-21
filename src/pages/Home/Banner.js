@@ -1,47 +1,6 @@
-// import React from "react";
-// import Slider from "react-slick";
-
-// const Banner = () => {
-//     const settings = {
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//     };
-
-//     return (
-//         <div>
-//             <Slider {...settings}>
-//                 <div className="bg-primary h-[60vh]">
-//                     <h3 className="text-5xl text-center text-white">1</h3>
-//                     <h3 className="text-5xl text-center text-white">1</h3>
-//                     <h3 className="text-5xl text-center text-white">1</h3>
-//                     <h3 className="text-5xl text-center text-white">1</h3>
-//                     <h3 className="text-5xl text-center text-white">1</h3>
-//                 </div>
-//                 <div className="bg-primary h-[60vh]">
-//                     <h3 className="text-5xl text-center text-white">2</h3>
-//                     <h3 className="text-5xl text-center text-white">2</h3>
-//                     <h3 className="text-5xl text-center text-white">2</h3>
-//                     <h3 className="text-5xl text-center text-white">2</h3>
-//                 </div>
-//                 <div className="bg-secondary h-[60vh]">
-//                     <h3 className="text-5xl text-center text-white">3</h3>
-//                     <h3 className="text-5xl text-center text-white">3</h3>
-//                     <h3 className="text-5xl text-center text-white">3</h3>
-//                     <h3 className="text-5xl text-center text-white">3</h3>
-//                 </div>
-//             </Slider>
-//         </div>
-//     );
-// }
-
-
-// export default Banner;
-
 import React, { Component } from "react";
 import Slider from "react-slick";
+import oppo from '../../assets/image/oppo.png'
 
 export default class SimpleSlider extends Component {
     render() {
@@ -53,36 +12,115 @@ export default class SimpleSlider extends Component {
             slidesToScroll: 1
         };
         return (
-            <div>
+            <div className="mt-6">
                 <Slider {...settings}>
-                    <div className="bg-primary  h-[60vh]">
-                        <div className="flex flex-row">
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
+                    <div className="bg-primary h-[60vh]">
+                        <div className="flex items-center justify-around">
+                            <div>
+                                <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
+                                <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
+                                <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
+                                <div className="flex mb-2">
+                                    <div className=" border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">indian</p>
+                                    </div>
+                                    <div className="ml-5  border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">INTERNATIONAL
+</p>
+                                    </div>
+                                </div>
+                                <button className="btn btn-primary">Book now</button>
+                            </div>
+                            <div>
+                                <img className="h-[50vh]" src={oppo} alt="" />
+                            </div>
                         </div>
 
                     </div>
-                    <div className="bg-secondary h-[60vh]">
-                        <div className="flex flex-row">
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
+                    <div className="bg-neutral h-[60vh]">
+                        <div className="flex items-center justify-around">
+                            <div>
+                                <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
+                                <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
+                                <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
+                                <div className="flex mb-2">
+                                    <div className=" border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">indian</p>
+                                    </div>
+                                    <div className="ml-5 border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">INTERNATIONAL
+</p>
+                                    </div>
+                                </div>
+                                <button className="btn btn-primary">Book now</button>
+                            </div>
+                            <div>
+                                <img className="h-[50vh]" src={oppo} alt="" />
+                            </div>
                         </div>
+
                     </div>
                     <div className="bg-primary h-[60vh]">
-                        <div className="flex flex-row">
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
+                        <div className="flex items-center justify-around">
+                            <div>
+                                <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
+                                <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
+                                <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
+                                <div className="flex mb-2">
+                                    <div className="border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">indian</p>
+                                    </div>
+                                    <div className="ml-5 border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">INTERNATIONAL
+</p>
+                                    </div>
+                                </div>
+                                <button className="btn">Book now</button>
+                            </div>
+                            <div>
+                                <img className="h-[50vh]" src={oppo} alt="" />
+                            </div>
                         </div>
+
                     </div>
-                    <div className="bg-secondary h-[60vh]">
-                        <div className="flex flex-row">
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
-                            <div>ajfdsfk a fjkj </div>
+                    <div className="bg-neutral h-[60vh]">
+                        <div className="flex items-center justify-around">
+                            <div>
+                                <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
+                                <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
+                                <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
+                                <div className="flex mb-2">
+                                    <div className="border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">indian</p>
+                                    </div>
+                                    <div className="ml-5 border px-5 py-1">
+                                        <p className="text-center text-white">6 & 128</p>
+                                        <p className="text-white text-xl">BDT.18999</p>
+                                        <p className="uppercase text-center text-white">INTERNATIONAL
+</p>
+                                    </div>
+                                </div>
+                                <button className="btn btn-primary">Book now</button>
+                            </div>
+                            <div>
+                                <img className="h-[50vh]" src={oppo} alt="" />
+                            </div>
                         </div>
+
                     </div>
                 </Slider>
             </div>

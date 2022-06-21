@@ -14,17 +14,23 @@ const ForgotPassword = () => {
         error
     ] = useSendPasswordResetEmail(auth);
 
-    errorMessage = <p className='text-red-500'>{error?.message}</p>;
 
-
-    const onSubmit = async data => {
+    const onSubmit = async(data) => {
         const { email } = data;
-       await sendPasswordResetEmail(email);
+       await sendPasswordResetEmail(email); 
+
     };
 
     if (sending) {
         return <Loading></Loading>
     }
+    
+    if(error?.message === 'Firebase: Error (auth/user-not-found).'){
+        console.log('user not found');
+        errorMessage = 'User Not Found'
+    }
+
+
 
     return (
         <div class="hero min-h-screen bg-base-200">
@@ -46,7 +52,7 @@ const ForgotPassword = () => {
 
                             </label>
                         </div>
-                        {errorMessage}
+                        <p className='text-red-500 mt-2 ml-1'>{errorMessage}</p>
                         <input className='btn btn-primary btn-outline mt-3 w-full' type="submit" value="Send" />
                     </form>
                 </div>
