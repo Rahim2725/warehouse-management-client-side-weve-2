@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Service = ({ phone }) => {
-    
-    const navigate = useNavigate() ;
+
+    const navigate = useNavigate();
     const { name, img, description, price, supplier_name, quantity, _id } = phone;
 
     const [seeMore, setSeeMore] = useState(false);
@@ -14,7 +14,7 @@ const Service = ({ phone }) => {
     }
 
     const updateData = id => {
-        console.log('update btn is click',id);
+        console.log('update btn is click', id);
         navigate(`/service/${id}`)
     }
 
@@ -26,7 +26,11 @@ const Service = ({ phone }) => {
                 <h2 className="card-title">{name}</h2>
                 <p>Price: ৳{price}</p>
 
-                <p> {seeMore ? description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer text-blue-900 font-bold underline ml-2'>{seeMore ? 'See Less' : 'See More...'}</span></p>
+                <p> {seeMore ? description : description.substr(0, 55)}
+                    <span onClick={toggleBtn}
+                        className='cursor-pointer text-blue-900 font-bold underline ml-2'>
+                        {seeMore ? 'See Less' : 'See More...'}
+                    </span></p>
 
                 <p>Quantity: {quantity}</p>
                 <p>Supplier Name : {supplier_name}</p>
