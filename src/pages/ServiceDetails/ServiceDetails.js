@@ -1,5 +1,5 @@
-import React from 'react';
 import { useQuery } from 'react-query';
+import Loading from '../../components/Loading';
 const ServiceDetails = () => {
 
     const { data: phones, isLoading, refetch } = useQuery('service', () =>
@@ -8,17 +8,24 @@ const ServiceDetails = () => {
     );
 
     if (isLoading) {
-        return <p>Loading......</p>
+        return <Loading></Loading>
     }
     const deletePhone = id => {
-       console.log(id);
+        console.log(id);
+        fetch(`http://localhost:5000/service/${id}`, {
+            method: 'DELETE'
+        })
+            .then(res => res.json)
+            .then(data => {
+                refetch();
+            })
     }
 
     return (
         <div className='max-w-full mx-10'>
             <h1 className='text-3xl text-center mb-10 text-primary'>Latest Official Phones Details</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
@@ -32,7 +39,8 @@ const ServiceDetails = () => {
                     <tbody>
                         {
                             phones.map((phone, index) =>
-                                <tr>
+                                <tr
+                                    key={index}>
                                     <th>{index + 1}</th>
                                     <td>{phone.name}</td>
                                     <td> <img className='w-20 h-20' src={phone.img} alt="" /></td>

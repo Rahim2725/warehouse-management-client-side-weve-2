@@ -20,18 +20,18 @@ const Service = ({ phone }) => {
 
 
     return (
-        <div class="card card-compact  bg-base-100 shadow-xl rounded-none border">
+        <div className="card card-compact  bg-base-100 shadow-xl rounded-none border">
             <figure><img width="200px" src={img} alt="Shoes" /></figure>
-            <div class="card-body">
-                <h2 class="card-title">{name}</h2>
+            <div className="card-body">
+                <h2 className="card-title">{name}</h2>
                 <p>Price: ৳{price}</p>
 
                 <p> {seeMore ? description : description.substr(0, 55)} <span onClick={toggleBtn} className='cursor-pointer text-blue-900 font-bold underline ml-2'>{seeMore ? 'See Less' : 'See More...'}</span></p>
 
                 <p>Quantity: {quantity}</p>
                 <p>Supplier Name : {supplier_name}</p>
-                <div class="card-actions justify-end">
-                    <button onClick={() => updateData(_id)} class="btn  rounded-none px-8 py-2" >Update</button>
+                <div className="card-actions justify-end">
+                    <button onClick={() => updateData(_id)} className="btn  rounded-none px-8 py-2" >Update</button>
                 </div>
             </div>
         </div>

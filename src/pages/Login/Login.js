@@ -1,9 +1,8 @@
-import React from 'react';
-import { Link } from "react-router-dom"
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
-import Loading from '../../components/Loading';
 import { useForm } from 'react-hook-form';
+import { Link } from "react-router-dom";
+import Loading from '../../components/Loading';
+import auth from '../../firebase.init';
 
 
 const Login = () => {
@@ -33,17 +32,17 @@ const Login = () => {
 
 
     return (
-        <div class="hero min-h-screen bg-base-200">
-            <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <div class="card-body">
+        <div className="hero min-h-screen bg-base-200">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card-body">
 
 
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="email" class="input input-bordered" {...register("email", {
+                            <input type="email" placeholder="email" className="input input-bordered" {...register("email", {
                                 required: {
                                     value: true,
                                     message: 'Email is Required'
@@ -55,12 +54,12 @@ const Login = () => {
                             </label>
                         </div>
 
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Password</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
                             </label>
 
-                            <input type="password" placeholder="Password" class="input input-bordered" {...register("password", {
+                            <input type="password" placeholder="Password" className="input input-bordered" {...register("password", {
                                 required: {
                                     value: true,
                                     message: 'Password is Required'
@@ -70,8 +69,8 @@ const Login = () => {
                                 {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                             </label>
 
-                            <label class="label">
-                                <Link to="/forgotPassword" class="label-text-alt link link-hover">Forgot password?</Link>
+                            <label className="label">
+                                <Link to="/forgotPassword" className="label-text-alt link link-hover">Forgot password?</Link>
                             </label>
                         </div>
 

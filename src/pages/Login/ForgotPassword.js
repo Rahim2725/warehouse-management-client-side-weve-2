@@ -1,8 +1,7 @@
-import React from 'react';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
 import { useForm } from 'react-hook-form';
 import Loading from '../../components/Loading';
+import auth from '../../firebase.init';
 
 const ForgotPassword = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -33,15 +32,15 @@ const ForgotPassword = () => {
 
 
     return (
-        <div class="hero min-h-screen bg-base-200">
-            <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <div class="card-body">
+        <div className="hero min-h-screen bg-base-200">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card-body">
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="email" class="input input-bordered" {...register("email", {
+                            <input type="email" placeholder="email" className="input input-bordered" {...register("email", {
                                 required: {
                                     value: true,
                                     message: 'Email is Required'

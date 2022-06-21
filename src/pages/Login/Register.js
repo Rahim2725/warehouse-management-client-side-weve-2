@@ -1,8 +1,7 @@
-import React from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useForm } from 'react-hook-form';
 import Loading from '../../components/Loading';
 import auth from '../../firebase.init';
-import { useForm } from 'react-hook-form';
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -32,17 +31,17 @@ const Register = () => {
 
 
     return (
-        <div class="hero min-h-screen bg-base-200">
-            <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <div class="card-body">
+        <div className="hero min-h-screen bg-base-200">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="card-body">
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Name</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Name" class="input input-bordered" {...register("name", {
+                            <input type="text" placeholder="Name" className="input input-bordered" {...register("name", {
                                 required: {
                                     value: true,
                                     message: 'name is Required'
@@ -53,11 +52,11 @@ const Register = () => {
                             </label>
                         </div>
 
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
-                            <input type="email" placeholder="Email" class="input input-bordered" {...register("email", {
+                            <input type="email" placeholder="Email" className="input input-bordered" {...register("email", {
                                 required: {
                                     value: true,
                                     message: 'Email is Required'
@@ -68,12 +67,12 @@ const Register = () => {
                             </label>
                         </div>
 
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Password</span>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
                             </label>
 
-                            <input type="password" placeholder="Password" class="input input-bordered" {...register("password", {
+                            <input type="password" placeholder="Password" className="input input-bordered" {...register("password", {
                                 required: {
                                     value: true,
                                     message: 'Password is Required'
