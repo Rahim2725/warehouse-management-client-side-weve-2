@@ -1,13 +1,24 @@
-import React from 'react';
+import React from "react";
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 
-const Review = () => {
+const Review = ({ review }) => {
+    console.log(review)
+    const { feedback, name, rating } = review;
     return (
-        <div class="card  bg-base-100 shadow-xl">
-            <div class="card-body">
-                <h2 class="card-title">Card title!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+        <div class="card  border-2 rounded-none bg-base-100 ">
+            <div class="px-2 py-2">
+                <div>
+                    <Stack spacing={1}>
+                        <Rating name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
+                    </Stack>
+                    <div class="divider"></div>
+
+                </div>
+                <p>{feedback}</p>
+                <div>
+                    <img src="" alt="" />
+                    <h1 className='font-bold'>{name}</h1>
                 </div>
             </div>
         </div>
