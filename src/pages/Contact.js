@@ -18,7 +18,7 @@ const Contact = () => {
         e.target.reset();
     };
     return (
-        <div className='flex h-screen justify-center items-center bg-base-200 '>
+        <div className='flex h-fit py-6 justify-center items-center bg-base-200 '>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className='card-body'>
                     <h1 className='text-2xl text-center text-primary font-bold'>Please Contact Me</h1>

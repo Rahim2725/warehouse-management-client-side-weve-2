@@ -7,9 +7,11 @@ export default class SimpleSlider extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed: 3000,
         };
         return (
             <div className="mt-6">
@@ -30,7 +32,7 @@ export default class SimpleSlider extends Component {
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
                                         <p className="uppercase text-center text-white">INTERNATIONAL
-</p>
+                                        </p>
                                     </div>
                                 </div>
                                 <button className="btn btn-primary">Book now</button>
@@ -57,7 +59,7 @@ export default class SimpleSlider extends Component {
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
                                         <p className="uppercase text-center text-white">INTERNATIONAL
-</p>
+                                        </p>
                                     </div>
                                 </div>
                                 <button className="btn btn-primary">Book now</button>
@@ -84,7 +86,7 @@ export default class SimpleSlider extends Component {
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
                                         <p className="uppercase text-center text-white">INTERNATIONAL
-</p>
+                                        </p>
                                     </div>
                                 </div>
                                 <button className="btn">Book now</button>
@@ -111,7 +113,7 @@ export default class SimpleSlider extends Component {
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
                                         <p className="uppercase text-center text-white">INTERNATIONAL
-</p>
+                                        </p>
                                     </div>
                                 </div>
                                 <button className="btn btn-primary">Book now</button>

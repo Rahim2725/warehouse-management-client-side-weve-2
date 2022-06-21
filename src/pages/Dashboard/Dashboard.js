@@ -7,8 +7,6 @@ const Dashboard = () => {
             <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content bg-base-200 pt-10 pl-10">
                 {/* <!-- Page content here --> */}
-                <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-                <h1>this in opp</h1>
                 <Outlet />
             </div>
             <div class="drawer-side">
@@ -20,6 +18,9 @@ const Dashboard = () => {
                     </li>
                     <li>
                         <NavLink className="mt-2" to="/dashboard/addReview">Add Review</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="mt-2" to="/dashboard/myItems">Add Review</NavLink>
                     </li>
                 </ul>
 
