@@ -28,7 +28,7 @@ const Review = ({ review }) => {
                 <div className="divider"></div>
                 <div className="flex justify-around items-center">
                     <div class="avatar">
-                        <div class="w-20 rounded-full">
+                        <div class="w-16 rounded-full">
                             <img src={imge ? 'https://api.lorem.space/image/face?hash=92310' : "https://www.pngkey.com/png/full/73-730477_first-name-profile-image-placeholder-png.png"} alt="" />
                         </div>
                     </div>

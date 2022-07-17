@@ -10,14 +10,20 @@ const ServiceInfo = () => {
         fetch(`http://localhost:5000/service/${serviceId}`)
             .then(res => res.json())
     )
+    const {description, img, name, price} = service ; 
 
     if (isLoading) {
         return <Loading></Loading>
     }
 
+    console.log(service);
+
     return (
         <div>
             <h1>this is data {service?._id} </h1>
+            <img src={img} alt="" />
+            <h1>{name}</h1>
+            <p>{price}</p>
         </div>
     );
 };

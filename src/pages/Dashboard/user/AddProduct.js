@@ -3,9 +3,9 @@ import React from 'react';
 const AddProduct = () => {
     return (
         <div className='flex justify-center '>
-            <div className='border-4 p-10'>
-                <h1 className='text-center text-3xl font-bold'>Add New Product Details </h1>
-                <div className=' shadow-xl border mt-3 p-4'>
+            <div  className=' w-5/12 shadow-xl  rounded-lg border mt-3 p-4'>
+                <h1 className='text-center text-3xl mb-3 font-bold '>Add New Product </h1>
+                <div>
                     <form >
                         <input type="text" placeholder="Product Name" class="input input-bordered block w-full" />
                         <input type="number" placeholder="Product Price" class="input input-bordered mt-3 block w-full" />

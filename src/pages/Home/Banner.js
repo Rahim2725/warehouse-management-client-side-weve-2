@@ -16,13 +16,13 @@ export default class SimpleSlider extends Component {
         return (
             <div className="mt-6">
                 <Slider {...settings}>
-                    <div className="bg-primary h-[60vh]">
-                        <div className="flex items-center justify-around">
+                    <div className="bg-primary lg:h-[60vh]">
+                        <div className="lg:flex items-center justify-around">
                             <div>
                                 <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
                                 <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
                                 <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
-                                <div className="flex mb-2">
+                                <div className="lg:flex mb-2">
                                     <div className=" border px-5 py-1">
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
@@ -38,18 +38,18 @@ export default class SimpleSlider extends Component {
                                 <button className="btn btn-primary">Book now</button>
                             </div>
                             <div>
-                                <img className="h-[50vh]" src={oppo} alt="" />
+                                <img className="max-h-screen lg:h-[50vh]" src={oppo} alt="" />
                             </div>
                         </div>
 
                     </div>
-                    <div className="bg-neutral h-[60vh]">
-                        <div className="flex items-center justify-around">
+                    <div className="bg-neutral lg:h-[60vh]">
+                        <div className="lg:flex items-center justify-around">
                             <div>
                                 <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
                                 <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
                                 <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
-                                <div className="flex mb-2">
+                                <div className="lg:flex mb-2">
                                     <div className=" border px-5 py-1">
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
@@ -65,18 +65,18 @@ export default class SimpleSlider extends Component {
                                 <button className="btn btn-primary">Book now</button>
                             </div>
                             <div>
-                                <img className="h-[50vh]" src={oppo} alt="" />
+                                <img className="max-h-screen lg:h-[50vh]" src={oppo} alt="" />
                             </div>
                         </div>
 
                     </div>
-                    <div className="bg-primary h-[60vh]">
-                        <div className="flex items-center justify-around">
+                    <div className="bg-primary  lg:h-[60vh]">
+                        <div className="lg:flex items-center justify-around">
                             <div>
                                 <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
                                 <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
                                 <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
-                                <div className="flex mb-2">
+                                <div className="lg:flex mb-2">
                                     <div className="border px-5 py-1">
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
@@ -92,18 +92,18 @@ export default class SimpleSlider extends Component {
                                 <button className="btn">Book now</button>
                             </div>
                             <div>
-                                <img className="h-[50vh]" src={oppo} alt="" />
+                                <img className=" max-h-screen lg:h-[50vh]" src={oppo} alt="" />
                             </div>
                         </div>
 
                     </div>
-                    <div className="bg-neutral h-[60vh]">
-                        <div className="flex items-center justify-around">
+                    <div className="bg-neutral lg:h-[60vh]">
+                        <div className="lg:flex items-center justify-around">
                             <div>
                                 <h1 className="text-8xl font-bold text-white mb-5">Oppo</h1>
                                 <h2 className="text-4xl mb-2 text-white">Reno Z Purple</h2>
                                 <p className="uppercase mb-2 text-white">b o o k i n g s t a r t n o w</p>
-                                <div className="flex mb-2">
+                                <div className="lg:flex mb-2">
                                     <div className="border px-5 py-1">
                                         <p className="text-center text-white">6 & 128</p>
                                         <p className="text-white text-xl">BDT.18999</p>
@@ -119,7 +119,7 @@ export default class SimpleSlider extends Component {
                                 <button className="btn btn-primary">Book now</button>
                             </div>
                             <div>
-                                <img className="h-[50vh]" src={oppo} alt="" />
+                                <img className="max-h-screen lg:h-[50vh]" src={oppo} alt="" />
                             </div>
                         </div>
 

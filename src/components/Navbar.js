@@ -1,14 +1,23 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
+import Loading from './Loading';
 
 
 const Navbar = () => {
     const [user, loading, error] = useAuthState(auth);
 
+    if (loading) {
+        return <Loading></Loading>
+    }
+
+    const logout = () => {
+
+
+    }
 
     return (
-        <div className="navbar bg-base-100 px-12">
+        <div className="navbar bg-base-300 px-12">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -19,7 +28,7 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Mobile Stroll</a>
+                <Link to="/" className="btn btn-ghost normal-case text-xl">Mobile Stroll</Link>
 
                 <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
             </div>
@@ -43,6 +52,10 @@ const Navbar = () => {
                     </li>
                     {user ?
                         <>
+                            <button>Log out</button>
+                        </>
+                        :
+                        <>
                             <li>
                                 <NavLink className="mr-2" to="/login">Login</NavLink>
                             </li>
@@ -50,10 +63,7 @@ const Navbar = () => {
                                 <NavLink className="mr-2" to="/register">Register</NavLink>
                             </li>
                         </>
-                        :
-                        <>
-                            <button>Log out</button>
-                        </>
+
                     }
                 </ul>
 
